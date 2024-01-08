@@ -1,5 +1,4 @@
 // eslint-disable-next-line no-unused-vars
-let students = ["Abhijeet","Ayushraj","Divin","Edmund","Esra","Rui","Hannah","John","Joshua","Kadri","Maria","Maxwell","Rais","Roney","Samuel","Solonas","Stewart","Thomas"];
 
 function App() {
   return (
