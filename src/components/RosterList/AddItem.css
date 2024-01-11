@@ -1,0 +1,33 @@
+/* AddItem.css */
+
+/* Style for the form container */
+.AddItemForm {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Style for the input field */
+  .AddItemInput {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  /* Style for the submit button */
+  .AddItemSubmit {
+    padding: 10px 15px;
+    background-color: #1d8afd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for the submit button */
+  .AddItemSubmit:hover {
+    background-color: #0367d3;
+  }
+  
