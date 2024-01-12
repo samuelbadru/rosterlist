@@ -9,7 +9,7 @@ const RosterList = (props) => {
         <div className="RosterList">
             <AddItem rosterType={props.rosterType} setRoster={props.setRoster}/>
             <ul>
-                {sortedRoster.map((item, index) => {return <Item key={index} name={item} /> })}
+                {sortedRoster.map((item, index) => {return <Item key={index} userID={index} name={item} /> })}
             </ul>
         </div>
     )

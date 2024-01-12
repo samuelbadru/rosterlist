@@ -11,7 +11,15 @@ const AddItem = (props) => {
 
     const handleAddItemClick = (event) => {
         event.preventDefault();
-        if (newItem.trim() !== "") {
+
+        if(!isNaN(newItem) && parseInt(newItem) >= 1 && parseInt(newItem) <= 10){
+            fetch(`https://jsonplaceholder.typicode.com/users/${newItem}`)
+            .then(response => response.json())
+            .then(data => {
+                props.setRoster((prevRoster) => {return [...prevRoster, data.name]})
+                setNewItem("")})
+        }
+        else if (newItem.trim() !== "") {
             // setStateDevelopers([...prevRoster, "Dave"])
             props.setRoster((prevRoster) => {return [...prevRoster, newItem]})
             setNewItem("");

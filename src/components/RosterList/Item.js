@@ -1,6 +1,8 @@
-const Item = (props) =>{
+import { Link } from "react-router-dom";
+
+const Item = (props) =>{    
     return(
-        <li>{props.name}</li>
+        <li><Link to={`/users/${props.userID}`}>{props.name}</Link></li>
     )
 
 }
